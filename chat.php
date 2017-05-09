@@ -268,7 +268,7 @@ function print_stylesheet($init=false){
 	echo '.post table,.controls table,.login table{border-spacing:0px;margin-left:auto;margin-right:auto;} .login table{border:2px solid;} .controls{overflow-y:none;} ';
 	echo '#manualrefresh{display:block;position:fixed;text-align:center;left:25%;width:50%;top:-200%;animation:timeout_messages ';
 	if(isset($U['refresh'])){
-		echo $U['refresh']+20;
+		echo $U['refresh']+30;
 	}else{
 		echo '160';
 	}
