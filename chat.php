@@ -2896,6 +2896,12 @@ function validate_input(){
 			$message=sprintf(get_setting('msgattache'), "<a class=\"attachement\" href=\"$_SERVER[SCRIPT_NAME]?action=download&amp;id=$hash\" target=\"_blank\">$name</a>", $message);
 		}
 	}
+	include('./emojione/autoload.php');
+    $client=new Emojione\Client(new Emojione\Ruleset());
+    $client->ascii=true;
+    $client->sprites=true;
+    $message=str_replace('<br>', "\n", $message);
+    $message=$client->toImage($message);
 	if(add_message($message, $recipient, $U['nickname'], $U['status'], $poststatus, $displaysend, $U['style'])){
 		$U['lastpost']=time();
 		$stmt=$db->prepare('UPDATE ' . PREFIX . 'sessions SET lastpost=?, postid=? WHERE session=?;');
