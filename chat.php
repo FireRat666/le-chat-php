@@ -2902,6 +2902,7 @@ function validate_input(){
     $client->sprites=true;
     $message=str_replace('<br>', "\n", $message);
     $message=$client->toImage($message);
+    $message=str_replace("\n", '<br>', $message);
 	if(add_message($message, $recipient, $U['nickname'], $U['status'], $poststatus, $displaysend, $U['style'])){
 		$U['lastpost']=time();
 		$stmt=$db->prepare('UPDATE ' . PREFIX . 'sessions SET lastpost=?, postid=? WHERE session=?;');
