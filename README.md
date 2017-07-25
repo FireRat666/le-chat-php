@@ -1,7 +1,7 @@
 General Information:
 --------------------
 
-This is a PHP Chat based on LE CHAT v.1.14. An Copy of this script can be downloaded at https://github.com/FireRat666/le-chat-php
+This is a PHP Chat based on LE CHAT v.1.14. A Copy of this script can be downloaded at https://github.com/FireRat666/le-chat-php
 The original perl LE CHAT script by Lucky Eddie can be downloaded at [his site](http://4fvfamdpoulu2nms.onion/lechat/) or via a tor2web proxy like [this one](https://4fvfamdpoulu2nms.onion.to/lechat/) if you don't have TOR installed.
 If you add your own cool features or have a feature request, please tell me and I will add them, if I like them.
 Please also let me know about any bugs you find in the code, so I can fix them.
